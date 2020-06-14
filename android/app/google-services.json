@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "40183899636",
+    "firebase_url": "https://confidentapp.firebaseio.com",
+    "project_id": "confidentapp",
+    "storage_bucket": "confidentapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40183899636:android:f6a6c6b2cc100c158e05a1",
+        "android_client_info": {
+          "package_name": "com.example.confidentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40183899636-qu8p9jr79b1vknj2hufj9iaqmctd5tve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAplubd3u61FIqJWNPcaMOVTeKPmsDaAjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40183899636-qu8p9jr79b1vknj2hufj9iaqmctd5tve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
