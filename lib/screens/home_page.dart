@@ -2,6 +2,7 @@ import 'package:confidentapp/widgets/chat_message_list_item.dart';
 import 'package:confidentapp/models/chat_message.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
               //Text(''),
               Padding(
                 padding: const EdgeInsets.fromLTRB(0.0, 30.0, 0, 0),
-                child: Image.asset('images/confident_logo.png', scale: 10.0, color: Colors.white),
+                child: Image.asset('images/confident_logo.png', scale: 10.0, color: Colors.white70),
               )
             ],
           ),
@@ -63,6 +64,11 @@ class _HomePageState extends State<HomePage> {
   void _sendMessage({String text}) {
     _controllerText.clear();
     _addMessage(name: 'Usuário', text: text, type: ChatMessageType.sent);
+
+    //DocumentReference documentReference = Firestore.instance.collection("Mensagens").document();
+    //Map<String, dynamic> mensagens = {
+    //  "mensagem":
+    //};
   }
 
   void _addMessage({String name, String text, ChatMessageType type}) {
@@ -123,8 +129,8 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildUserInput() {
     return Container(
-      color: Colors.white,
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      color: Colors.black,
+      padding: const EdgeInsets.symmetric(horizontal: 15.0),
       child: new Row(
         children: <Widget>[
           _buildTextField(),
